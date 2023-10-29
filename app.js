@@ -1,17 +1,26 @@
+let counter = 0;
 const add = document.querySelector("#add");
 const subtract = document.querySelector("#subtract");
-let result = document.querySelector("#result");
-let counter = 0;
+const result = document.querySelector("#result");
+const buttonContainer = document.getElementById("button-container");
 
-// Addition
-add.addEventListener('click', function() {
+// addition button
+const addButton = document.createElement('button');
+addButton.textContent = '+';
+addButton.addEventListener('click', function() {
     counter++;
     result.innerHTML = counter;
 });
-// Subtraction
-subtract.addEventListener('click', function() {
+
+//subtraction button - not below 0
+const subtractButton = document.createElement('button');
+subtractButton.textContent = '-';
+subtractButton.addEventListener('click', function() {
     if (counter > 0) {
         counter--;
         result.innerHTML = counter;
     }
 });
+
+buttonContainer.appendChild(subtractButton);
+buttonContainer.appendChild(addButton);
