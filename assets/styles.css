@@ -1,0 +1,93 @@
+
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Handjet:wght@400;900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background-image: url(img/c134ea8106718_337570.png);
+  background-size: cover;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.counter-container {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6px;
+}
+span {
+    font-size: 100px;
+    padding: 10px;
+    justify-content: center;
+}
+span #result{
+    align-items: center;
+    justify-content: center;
+}
+button {
+background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#screen {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+
+
+#calculator{
+    background-color: rgb(85, 144, 171);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px gray;
+}
+
+.button-container {
+margin: 30px;
+}
+
+#result {
+    margin: 30px;
+}
+
+#subtract:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#add:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
