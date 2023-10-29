@@ -17,7 +17,7 @@ body {
 
 body {
   font-family: 'VT323', monospace;
-  background-image: url(img/dddr214-e442d876-0246-408e-ba99-5df4aa0c7911.png);
+  background-image: url(/assets/img/dddr214-e442d876-0246-408e-ba99-5df4aa0c7911.png);
   background-size: cover;
   font-size: 20px;
   display: flex;
@@ -39,7 +39,7 @@ body {
 
 /* buttons */
 button {
-  background-color:black;
+  background-color:rgb(37, 37, 37);
   color: white;
   padding: 15px 20px;
   text-align: center;
