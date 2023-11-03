@@ -45,7 +45,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50px;
@@ -101,7 +101,7 @@ margin-bottom: 25px;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  box-shadow:   -7px 0 0 0 black, 7px 0 0 0 black, 0 7px 0 0 black, 0 7px 0 0 black;
+  box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 7px 0 0 black, 0 7px 0 0 black;
 }
 
 /* result */
