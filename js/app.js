@@ -1,6 +1,4 @@
 let counter = 0;
-const add = document.querySelector("#add");
-const subtract = document.querySelector("#subtract");
 const result = document.querySelector("#result");
 const buttonContainer = document.getElementById("button-container");
 

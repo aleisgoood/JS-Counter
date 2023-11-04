@@ -109,10 +109,13 @@ span {
   font-size: 100px;
   padding: 20px;
   justify-content: center;
+
 }
 span #result{
+  display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 #result {
     margin: 50px;
