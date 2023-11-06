@@ -14,7 +14,6 @@ body {
   height: 100vh;
 }
 
-
 body {
   font-family: 'VT323', monospace;
   background-image: url(..//img/background.png);
@@ -73,8 +72,6 @@ button {
 .button-container{
 margin-bottom: 20px;
 }
-
-
 
 /* screen */
 #screen {
