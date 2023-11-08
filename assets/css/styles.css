@@ -103,17 +103,16 @@ margin-bottom: 20px;
 span {
   font-size: 100px;
   padding: 20px;
-  justify-content: center;
+  text-align: center;
 
 }
 span #result{
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 #result {
-    margin: 50px;
-    align-items: center;
-    justify-content: center;
+  display: block;
+    align-self: start;
 }
