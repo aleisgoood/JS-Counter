@@ -40,7 +40,7 @@
 
   @media only screen and (max-width: 800px) {
     #calculator {
-      width: 25%;
+      width: 30%;
     }
     body{
         background-color: #FCD8A8;
@@ -56,14 +56,13 @@
     #counter-container{
        #counter-container{
         height: fit-content;
-        
     } 
     }
   }
   
   @media only screen and (max-width: 900px) {
     #calculator {
-      width: 20%;
+      width: 28%;
     }
   
     .buttons {
