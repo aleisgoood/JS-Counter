@@ -1,24 +1,34 @@
+let screen = document.getElementById("screen");
 let counter = 0;
-const result = document.querySelector("#result");
-const buttonContainer = document.getElementById("button-container");
 
-// addition button
-const addButton = document.createElement('button');
-addButton.textContent = '+';
-addButton.addEventListener('click', function() {
-    counter++;
-    result.innerHTML = counter;
-});
+function updateScreen() {
+    screen.textContent = counter;
+}
 
-//subtraction button - not below 0
-const subtractButton = document.createElement('button');
-subtractButton.textContent = '-';
-subtractButton.addEventListener('click', function() {
-    if (counter > 0) {
-        counter--;
-        result.innerHTML = counter;
+// increment and decrement functions
+function ButtonClick(event) {
+    const buttonValue = event.target.textContent;
+
+    if (buttonValue === '+') {
+        counter++;
+    } else if (buttonValue === '-') {
+        if (counter > 0) {
+            counter--;
+        }
     }
-});
+    updateScreen();
+}
 
-buttonContainer.appendChild(subtractButton);
-buttonContainer.appendChild(addButton);
+let buttonContainer = document.getElementById("button-container");
+buttonContainer.addEventListener("click", ButtonClick);
+
+// Create buttons for increment and decrement
+let incrementButton = document.createElement("button");
+incrementButton.textContent = "+";
+buttonContainer.appendChild(incrementButton);
+
+let decrementButton = document.createElement("button");
+decrementButton.textContent = "-";
+buttonContainer.appendChild(decrementButton);
+
+updateScreen();

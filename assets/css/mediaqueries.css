@@ -1,0 +1,102 @@
+@media only screen and (max-width: 600px) {
+    #calculator {
+      width: 30%;
+    }
+    body{
+        background-color: #FCD8A8;
+    }
+  
+    .buttons {
+      flex-direction: row;
+    }
+  
+    .button {
+      margin: 5px 0;
+    }
+    #counter-container{
+        height: fit-content;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #calculator {
+      width: 30%;
+    }
+    body{
+        background-color: bisque;
+    }
+  
+    .buttons {
+      flex-direction: row;
+    }
+  
+    .button {
+      margin: 5px 0;
+    }
+    #counter-container{
+        height: fit-content;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    #calculator {
+      width: 25%;
+    }
+    body{
+        background-color: #FCD8A8;
+    }
+  
+    .buttons {
+      flex-direction: row;
+    }
+  
+    .button {
+      margin: 5px 0;
+    }
+    #counter-container{
+       #counter-container{
+        height: fit-content;
+        
+    } 
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    #calculator {
+      width: 20%;
+    }
+  
+    .buttons {
+      flex-direction: row;
+    }
+  
+    .button {
+      margin: 5px 0;
+    }
+    body{
+        background-color: #FCD8A8;
+    }
+    #counter-container{
+        height: fit-content;
+        width: fit-content;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    #calculator {
+      width: 28%;
+    }
+  
+    .buttons {
+      flex-direction: row;
+    }
+  
+    .button {
+      margin: 5px 0;
+    }
+    body{
+        background-color: #FCD8A8;
+    }
+    #counter-container{
+        height: 50vh;
+    }
+  }
