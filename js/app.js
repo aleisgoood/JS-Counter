@@ -1,34 +1,31 @@
-let screen = document.getElementById("screen");
+const screen = document.getElementById("screen");
 let counter = 0;
 
-function updateScreen() {
+const updateScreen = () => {
     screen.textContent = counter;
-}
+};
 
-// increment and decrement functions
-function ButtonClick(event) {
+const ButtonClick = (event) => {
     const buttonValue = event.target.textContent;
 
-    if (buttonValue === '+') {
+    if (buttonValue === '+' && counter < Number.MAX_SAFE_INTEGER) {
         counter++;
-    } else if (buttonValue === '-') {
-        if (counter > 0) {
-            counter--;
-        }
+    } else if (buttonValue === '-' && counter > 0) {
+        counter--;
     }
-    updateScreen();
-}
 
-let buttonContainer = document.getElementById("button-container");
+    updateScreen();
+};
+// creating buttons 
+const buttonContainer = document.getElementById("button-container");
 buttonContainer.addEventListener("click", ButtonClick);
 
-// Create buttons for increment and decrement
-let incrementButton = document.createElement("button");
-incrementButton.textContent = "+";
-buttonContainer.appendChild(incrementButton);
+const createButton = (text) => {
+    const button = document.createElement("button");
+    button.textContent = text;
+    buttonContainer.appendChild(button);
+};
 
-let decrementButton = document.createElement("button");
-decrementButton.textContent = "-";
-buttonContainer.appendChild(decrementButton);
-
+createButton("+");
+createButton("-");
 updateScreen();
